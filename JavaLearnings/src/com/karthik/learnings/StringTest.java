@@ -64,6 +64,14 @@ public class StringTest {
 		System.out.println(s1==s3);
 		//System.out.println(s5==s6);
 		
+		
+		System.out.println("-------------------------------------");
+		String n1=null;
+		String n2=null;
+		// This will print just FALSE
+		System.out.println("This will print just FALSE");
+		System.out.println("n1==n2 is "+  n1==n2);
+		
 		System.out.println("-------------------------------------");
 		
 		String charlist = "a,s,d,f,1,2,f,e,4,g,j,u,3,2";
