@@ -12,6 +12,8 @@ public class HashMapIterator {
         myMap.put("1", "One");
         myMap.put("2", "Two");
         myMap.put("3", "Three");
+        
+        myMap.forEach((k,v) -> System.out.println(v));
 
         Iterator<String> it1 = myMap.keySet().iterator();
         while(it1.hasNext()){

@@ -1,21 +1,26 @@
 package com.karthik.learnings;
 
 public class InheritanceTest {
+	public static void main(String args[]) {
 
-	public static void main(String args[]){
-		BaseClass.print();
-		SubClass.print();
-	}
-	
-}
-
-class BaseClass{
-	static void print(){
-		System.out.println("Base");
+		BaseClass obj = new DerivedClass();
+		System.out.println(obj.name);
+		obj.print();
 	}
 }
-class SubClass{
-	static void print(){
-		System.out.println("Sub");
+
+class BaseClass {
+	String name = "baseVariable";
+
+	void print() {
+		System.out.println("baseMethod");
+	}
+}
+
+class DerivedClass extends BaseClass {
+	String name = "derivedVariable";
+
+	void print() {
+		System.out.println("derivedMethod");
 	}
 }
